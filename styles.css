@@ -33,3 +33,24 @@ body, html {
     font-size: 2em;
     margin: 0;
 }
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3em; /* Smaller font size for tablets and small screens */
+    }
+
+    .subtitle {
+        font-size: 1.5em; /* Smaller font size for tablets and small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Even smaller font size for phones */
+    }
+
+    .subtitle {
+        font-size: 1em; /* Even smaller font size for phones */
+    }
+}
