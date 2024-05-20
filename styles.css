@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Didact Gothic';
+    src: url('DidactGothic-Regular.ttf') format('truetype');
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif; /* Default font for the page */
+    background-color: black; /* Set background to black */
+    color: white; /* Set default text color to white */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background-image: url('background-image.jpg'); /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 4em;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 2em;
+    margin: 0;
+}
