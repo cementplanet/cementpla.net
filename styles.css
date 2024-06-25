@@ -14,14 +14,17 @@ body, html {
 .container {
     position: relative;
     height: 100%;
-    background-image: url('background-image.jpg'); /* Set background image */
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Center the background image */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.background-planet {
+    background-image: url('background-image.jpg'); /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
 }
 
 .title {
@@ -30,8 +33,9 @@ body, html {
 }
 
 .subtitle {
-    font-size: 2em;
+    font-size: 1em;
     margin: 0;
+    max-width: 600px;
 }
 
 /* Responsive font sizes for smaller screens */
@@ -41,7 +45,7 @@ body, html {
     }
 
     .subtitle {
-        font-size: 1.5em; /* Smaller font size for tablets and small screens */
+        font-size: 1em; /* Smaller font size for tablets and small screens */
     }
 }
 
@@ -51,6 +55,26 @@ body, html {
     }
 
     .subtitle {
-        font-size: 1em; /* Even smaller font size for phones */
+        font-size: 0.5em; /* Even smaller font size for phones */
     }
+}
+
+
+.nav-bar {
+    position: fixed;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 60px;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
 }
